@@ -2,6 +2,7 @@ package net.key1ime.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.key1ime.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //hello from laptop
@@ -12,5 +13,6 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
